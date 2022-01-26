@@ -1,6 +1,7 @@
 package Game;
 
 import Scenario.Scenario;
+import Snake.Snake;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -13,6 +14,7 @@ public class Game extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        new Scenario(primaryStage);
+        Snake snake = new Snake();
+        new Scenario(primaryStage, snake);
     }
 }

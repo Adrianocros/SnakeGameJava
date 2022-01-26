@@ -25,4 +25,17 @@ public class Snake {
         return head;
     }
 
+    public Integer getPositionX(){
+       return(int) this.head.getTranslateX();
+    }
+
+    public Integer getPositionY(){
+        return(int) this.head.getTranslateY();
+    }
+
+    public void setPosition(Integer x, Integer y){
+        this.head.setTranslateX(x);
+        this.head.setTranslateY(y);
+    }
+
 }
